@@ -1,6 +1,6 @@
 package stack;
 
-public class StackFunction3 {
+public class StackFunction4 {
 	Node head;
 
 	class Node {
@@ -11,15 +11,15 @@ public class StackFunction3 {
 			this.data = data;
 		}
 	}
-	/** Process
-	 *  ==============
+
+	/**
+	 * Process ==============
 	 * 
 	 * 1.addLast - To add the elements in queue at first 
-	 * 2. deleteFirst - To delete the first value of satck till it gets empty.
-	 * 3. display - To print the output 
+	 * 2. deleteFirst - To delete the first value of satck till it gets empty. 
+	 * 3. display - To print the output
 	 */
 
-	
 	/*
 	 * 1.creating method to add the last value to stack
 	 */
@@ -49,9 +49,9 @@ public class StackFunction3 {
 			System.out.println("Poping value");
 		head = head.next;
 	}
-	
+
 	/*
-	 *3. Method to Print OutPut
+	 * 3. Method to Print OutPut
 	 */
 	public void display() {
 		if (head == null) {

@@ -1,11 +1,11 @@
 package stack;
 
-public class Queue {
+public class Queue4 {
 	/*
 	 * creating Object
 	 */
-	StackFunction3 List = new StackFunction3();
-	
+	StackFunction4 List = new StackFunction4();
+
 	/*
 	 * calling method through object
 	 */
@@ -18,13 +18,14 @@ public class Queue {
 	 * calling method to display value in linkedList/Queue
 	 */
 	public void displayQueue() {
-			List.display();
+		List.display();
 	}
+
 	/*
 	 * deleting top value in the stack till stack gets empty
 	 */
 	public void deque() {
-			List.deleteFirst();
-			displayQueue();
+		List.deleteFirst();
+		displayQueue();
 	}
 }
