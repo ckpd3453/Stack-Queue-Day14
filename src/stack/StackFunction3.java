@@ -1,6 +1,6 @@
 package stack;
 
-public class StackFunction2 {
+public class StackFunction3 {
 	Node head;
 
 	class Node {
@@ -14,26 +14,33 @@ public class StackFunction2 {
 	/** Process
 	 *  ==============
 	 * 
-	 * 1.addFirst - To add the elements in stack
+	 * 1.addLast - To add the elements in queue at first 
 	 * 2. deleteFirst - To delete the first value of satck till it gets empty.
 	 * 3. display - To print the output 
 	 */
 
+	
 	/*
-	 * 1. Method to add elements
+	 * 1.creating method to add the last value to stack
 	 */
-	public void addFirst(Object data) {
+
+	public void addLast(Object data) {
 		Node newNode = new Node(data);
-		if (head == null) {
+		if (head == null)
 			head = newNode;
-		} else {
-			newNode.next = head;
-			head = newNode;
+		else if (head.next == null)
+			head.next = newNode;
+		else {
+			Node temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = newNode;
 		}
 	}
 
 	/*
-	 * 4.method to delete first value till the stack gets empty
+	 * 2.method to delete first value till the stack gets empty
 	 */
 	public void deleteFirst() {
 		if (head == null)
