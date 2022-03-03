@@ -1,6 +1,6 @@
 package stack;
 
-public class StackFunction {
+public class StackFunction2 {
 	Node head;
 
 	class Node {
@@ -15,7 +15,8 @@ public class StackFunction {
 	 *  ==============
 	 * 
 	 * 1.addFirst - To add the elements in stack
-	 * 2.display - To print the output 
+	 * 2. deleteFirst - To delete the first value of satck till it gets empty.
+	 * 3. display - To print the output 
 	 */
 
 	/*
@@ -32,7 +33,18 @@ public class StackFunction {
 	}
 
 	/*
-	 * Method to Print OutPut
+	 * 4.method to delete first value till the stack gets empty
+	 */
+	public void deleteFirst() {
+		if (head == null)
+			System.out.println("No elements present to delete");
+		else
+			System.out.println("Poping value");
+		head = head.next;
+	}
+	
+	/*
+	 *3. Method to Print OutPut
 	 */
 	public void display() {
 		if (head == null) {

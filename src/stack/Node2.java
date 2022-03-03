@@ -1,10 +1,10 @@
 package stack;
 
-public class Node {
+public class Node2 {
 	/*
 	 * creating Object
 	 */
-	StackFunction List = new StackFunction();
+	StackFunction2 List = new StackFunction2();
 	
 	/*
 	 * calling method through object
@@ -18,5 +18,12 @@ public class Node {
 	 */
 	public void displayStack() {
 			List.display();
+	}
+	/*
+	 * deleting top value in the stack till stack gets empty
+	 */
+	public void pop() {
+		while (List.head != null)
+			List.deleteFirst();
 	}
 }
